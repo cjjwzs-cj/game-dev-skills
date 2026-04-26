@@ -1,0 +1,43 @@
+{
+  "name": "game-dev-skills",
+  "version": "1.0.0",
+  "description": "🎮 Professional game development skills for Claude Code - planning review, design validation, code quality, and documentation generation",
+  "main": "scripts/install.js",
+  "bin": {
+    "game-dev-skills": "./scripts/cli.js"
+  },
+  "scripts": {
+    "postinstall": "node scripts/install.js",
+    "publish:patch": "npm version patch && npm publish --access public && git push && git push --tags",
+    "publish:minor": "npm version minor && npm publish --access public && git push && git push --tags",
+    "publish:major": "npm version major && npm publish --access public && git push && git push --tags"
+  },
+  "files": [
+    "skills/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "game-development",
+    "claude-code",
+    "ai-agent",
+    "planning-review",
+    "api-design",
+    "database-design",
+    "code-review",
+    "documentation",
+    "gamedev",
+    "claude",
+    "skill"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourname/game-dev-skills"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
