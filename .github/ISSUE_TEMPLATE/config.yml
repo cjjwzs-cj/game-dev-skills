@@ -1,0 +1,12 @@
+---
+blank_issues_enabled: true
+contact_links:
+  - name: 📖 Documentation
+    url: https://github.com/cjjwzs-cj/game-dev-skills#readme
+    about: Check the documentation for usage guides and examples
+  - name: 💬 Contributing Guidelines
+    url: https://github.com/cjjwzs-cj/game-dev-skills/blob/main/CONTRIBUTING.md
+    about: Learn how to contribute to this project
+  - name: 🐛 Known Issues
+    url: https://github.com/cjjwzs-cj/game-dev-skills/issues?q=is%3Aissue+is%3Aopen+label%3Abug
+    about: Check if your issue has already been reported

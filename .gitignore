@@ -1,5 +1,8 @@
 # Dependencies
 node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # Build outputs
 dist/
@@ -11,23 +14,40 @@ build/
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Logs
 *.log
 npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # Local config
 .env
 .env.local
+.env.*.local
 
 # Test outputs
 test-results/
 coverage/
+.nyc_output/
 
 # Temporary files
 *.tmp
 *.temp
+.cache/
+
+# Backup files
+*.bak
+*.backup
+
+# Package manager
+.npm/
+.yarn/
+.pnpm-store/

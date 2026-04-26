@@ -1,13 +1,19 @@
 {
   "name": "game-dev-skills",
   "version": "1.0.0",
-  "description": "🎮 Professional game development skills for Claude Code - planning review, design validation, code quality, and documentation generation",
-  "main": "scripts/install.js",
+  "description": "🎮 Complete AI skill library for game development - 47 production-ready skills with intelligent error handling",
+  "main": "scripts/cli.js",
   "bin": {
     "game-dev-skills": "./scripts/cli.js"
   },
   "scripts": {
     "postinstall": "node scripts/install.js",
+    "validate": "node scripts/validate.js",
+    "test": "node scripts/test.js",
+    "update": "node scripts/update.js",
+    "uninstall": "node scripts/uninstall.js",
+    "status": "node scripts/cli.js",
+    "smart-load": "node scripts/smart-loader.js",
     "publish:patch": "npm version patch && npm publish --access public && git push && git push --tags",
     "publish:minor": "npm version minor && npm publish --access public && git push && git push --tags",
     "publish:major": "npm version major && npm publish --access public && git push && git push --tags"
@@ -31,13 +37,22 @@
     "claude",
     "skill"
   ],
-  "author": "Your Name",
+  "author": "陈建军 <jianjun.chen@example.com>",
   "license": "MIT",
+  "homepage": "https://github.com/cjjwzs-cj/game-dev-skills#readme",
+  "bugs": {
+    "url": "https://github.com/cjjwzs-cj/game-dev-skills/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourname/game-dev-skills"
+    "url": "https://github.com/cjjwzs-cj/game-dev-skills"
   },
   "engines": {
     "node": ">=16"
-  }
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ]
 }

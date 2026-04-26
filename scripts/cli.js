@@ -13,7 +13,7 @@ const tools = [
 console.log(`
 ╔═══════════════════════════════════════════════════════════════╗
 ║  🎮 game-dev-skills v1.0.0                                   ║
-║  Professional Game Development Skills for Claude Code        ║
+║  Professional Game Development Skills for AI Assistants     ║
 ╚═══════════════════════════════════════════════════════════════╝
 `);
 
@@ -61,15 +61,18 @@ console.log(`
 ║  📚 Skills Included:                                         ║
 ║                                                              ║
 ║  📋 00-入口/          - 游戏策划案总审阅                       ║
-║  🎯 01-需求审阅/      - 前后端策划案评审 + 类型插件           ║
+║  🎯 01-需求审阅/      - 前后端策划案评审 + 5种类型插件         ║
 ║  🔧 02-设计审查/      - API/数据库/性能审查                    ║
 ║  ⚙️ 03-技术栈适配/    - Go/C++/Java/Cocos/Unity/Lua          ║
 ║  ✨ 04-代码质量/      - 代码审查 + 单元测试生成                ║
-║  📄 05-文档生成/      - API文档 + QA测试文档                  ║
+║  📄 05-文档生成/      - API文档 + QA测试文档 + 5种QA插件       ║
 ║  🎮 06-总控/         - 前后端总控审阅                         ║
 ╚═══════════════════════════════════════════════════════════════╝
 
 💡 Commands:
   npm install game-dev-skills    Install skills to current project
   game-dev-skills                Show this status
-`);
+
+🛡️ All skills include comprehensive error handling mechanisms
+📋 Standardized output formats with priority-based sorting (P0/P1/P2)
+🎮 Complete coverage for Card/RPG, SLG, MMO, MOBA, and Chess games`);

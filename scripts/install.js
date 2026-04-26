@@ -45,17 +45,17 @@ function main() {
   console.log(`
 ╔═══════════════════════════════════════════════════════════════╗
 ║     🎮 game-dev-skills v1.0.0                                 ║
-║     Professional Game Development Skills for Claude Code      ║
+║     Professional Game Development Skills for AI Assistants   ║
 ╚═══════════════════════════════════════════════════════════════╝
 
   📦 Installing skills...
   📁 Source: ${sourceSkills}
-  📁 Target: ${targetSkills}
-`);
+  📁 Target: ${targetSkills}`);
   
   // 检查源目录
   if (!fs.existsSync(sourceSkills)) {
     console.error('  ❌ Error: Source skills directory not found!');
+    console.error(`  📁 Expected: ${sourceSkills}`);
     process.exit(1);
   }
   
@@ -87,9 +87,13 @@ function main() {
 ╔═══════════════════════════════════════════════════════════════╗
 ║  🚀 Next steps:                                              ║
 ║                                                              ║
-║  1. Make sure Claude Code / Trae / Codex is installed        ║
-║  2. Use skills in Claude Code: /skills                       ║
+║  1. Make sure your AI tool is installed (Claude Code, Trae, etc.) ║
+║  2. Use skills in your AI tool: /skills                       ║
 ║  3. Or run: game-dev-skills to check status                  ║
+║                                                              ║
+║  🛡️ All skills include comprehensive error handling            ║
+║  📋 Standardized output formats with priority sorting           ║
+║  🎮 Complete coverage for 7 game types                        ║
 ╚═══════════════════════════════════════════════════════════════╝
 `);
 }

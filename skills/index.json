@@ -1,0 +1,692 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-04-26",
+  "totalSkills": 47,
+  "totalCategories": 7,
+  "skills": [
+    {
+      "id": "entry-review",
+      "name": "游戏策划案总审阅",
+      "category": "00-入口",
+      "description": "顶层入口技能。自动判断策划案需要后端审阅、前端审阅还是两者都需要，然后调用对应的总控技能。",
+      "keywords": ["策划案", "审阅", "评审", "游戏", "入口"],
+      "dependencies": ["游戏后端总控审阅", "游戏前端总控审阅"],
+      "size": 2500,
+      "priority": 1,
+      "optimized": true,
+      "file": "00-入口/游戏策划案总审阅.md"
+    },
+    {
+      "id": "backend-planning-review",
+      "name": "游戏后端策划案评审",
+      "category": "01-需求审阅/后端",
+      "description": "后端策划案评审技能，检查服务器架构、API设计、数据库设计、性能考虑等后端相关内容。",
+      "keywords": ["后端", "服务器", "API", "数据库", "架构", "性能"],
+      "dependencies": [],
+      "size": 4500,
+      "priority": 2,
+      "optimized": true,
+      "file": "01-需求审阅/后端/游戏后端策划案评审.md"
+    },
+    {
+      "id": "backend-card-rpg-plugin",
+      "name": "后端-卡牌RPG插件",
+      "category": "01-需求审阅/后端",
+      "description": "卡牌RPG游戏后端特定检查，包括卡牌系统、抽卡机制、卡组构建等。",
+      "keywords": ["卡牌", "RPG", "抽卡", "卡组", "卡牌RPG"],
+      "dependencies": ["游戏后端策划案评审"],
+      "size": 2800,
+      "priority": 3,
+      "optimized": true,
+      "file": "01-需求审阅/后端/后端-卡牌RPG插件.md"
+    },
+    {
+      "id": "backend-slg-plugin",
+      "name": "后端-SLG插件",
+      "category": "01-需求审阅/后端",
+      "description": "SLG游戏后端特定检查，包括地图系统、资源管理、战斗计算等。",
+      "keywords": ["SLG", "策略", "地图", "资源", "战斗计算"],
+      "dependencies": ["游戏后端策划案评审"],
+      "size": 2700,
+      "priority": 3,
+      "optimized": true,
+      "file": "01-需求审阅/后端/后端-SLG插件.md"
+    },
+    {
+      "id": "backend-mmo-plugin",
+      "name": "后端-MMO插件",
+      "category": "01-需求审阅/后端",
+      "description": "MMO游戏后端特定检查，包括跨服架构、负载均衡、数据同步等。",
+      "keywords": ["MMO", "多人", "跨服", "负载均衡", "数据同步"],
+      "dependencies": ["游戏后端策划案评审"],
+      "size": 2900,
+      "priority": 3,
+      "optimized": true,
+      "file": "01-需求审阅/后端/后端-MMO插件.md"
+    },
+    {
+      "id": "backend-chess-plugin",
+      "name": "后端-棋牌竞技插件",
+      "category": "01-需求审阅/后端",
+      "description": "棋牌竞技游戏后端特定检查，包括匹配系统、房间管理、防作弊等。",
+      "keywords": ["棋牌", "竞技", "匹配", "房间", "防作弊"],
+      "dependencies": ["游戏后端策划案评审"],
+      "size": 2600,
+      "priority": 3,
+      "optimized": true,
+      "file": "01-需求审阅/后端/后端-棋牌竞技插件.md"
+    },
+    {
+      "id": "backend-moba-plugin",
+      "name": "后端-MOBA插件",
+      "category": "01-需求审阅/后端",
+      "description": "MOBA游戏后端特定检查，包括英雄系统、匹配算法、战斗同步等。",
+      "keywords": ["MOBA", "英雄", "匹配", "战斗同步", "多人竞技"],
+      "dependencies": ["游戏后端策划案评审"],
+      "size": 2800,
+      "priority": 3,
+      "optimized": true,
+      "file": "01-需求审阅/后端/后端-MOBA插件.md"
+    },
+    {
+      "id": "backend-fps-plugin",
+      "name": "后端-FPS插件",
+      "category": "01-需求审阅/后端",
+      "description": "FPS游戏后端特定检查，包括射击系统、网络同步、反作弊、匹配系统等FPS特定内容。",
+      "keywords": ["FPS", "射击", "网络同步", "反作弊", "匹配系统"],
+      "dependencies": ["游戏后端策划案评审"],
+      "size": 3200,
+      "priority": 1,
+      "optimized": true,
+      "file": "01-需求审阅/后端/后端-FPS插件.md"
+    },
+    {
+      "id": "backend-casual-plugin",
+      "name": "后端-休闲类插件",
+      "category": "01-需求审阅/后端",
+      "description": "休闲游戏后端特定检查，包括关卡系统、成就系统、社交功能、数据分析、推送系统等休闲游戏特定内容。",
+      "keywords": ["休闲", "关卡", "成就", "社交", "数据分析", "推送"],
+      "dependencies": ["游戏后端策划案评审"],
+      "size": 3000,
+      "priority": 2,
+      "optimized": true,
+      "file": "01-需求审阅/后端/后端-休闲类插件.md"
+    },
+    {
+      "id": "frontend-planning-review",
+      "name": "游戏前端策划案评审",
+      "category": "01-需求审阅/前端",
+      "description": "前端策划案评审技能，检查UI设计、交互逻辑、性能优化、适配性等前端相关内容。",
+      "keywords": ["前端", "UI", "界面", "交互", "适配"],
+      "dependencies": [],
+      "size": 4300,
+      "priority": 2,
+      "optimized": true,
+      "file": "01-需求审阅/前端/游戏前端策划案评审.md"
+    },
+    {
+      "id": "frontend-card-rpg-plugin",
+      "name": "前端-卡牌RPG插件",
+      "category": "01-需求审阅/前端",
+      "description": "卡牌RPG游戏前端特定检查，包括卡牌UI、抽卡动画、卡组界面等。",
+      "keywords": ["卡牌", "RPG", "抽卡", "卡组", "UI"],
+      "dependencies": ["游戏前端策划案评审"],
+      "size": 2600,
+      "priority": 3,
+      "optimized": true,
+      "file": "01-需求审阅/前端/前端-卡牌RPG插件.md"
+    },
+    {
+      "id": "frontend-slg-plugin",
+      "name": "前端-SLG插件",
+      "category": "01-需求审阅/前端",
+      "description": "SLG游戏前端特定检查，包括地图渲染、资源显示、战斗动画等。",
+      "keywords": ["SLG", "策略", "地图", "渲染", "动画"],
+      "dependencies": ["游戏前端策划案评审"],
+      "size": 2500,
+      "priority": 3,
+      "optimized": true,
+      "file": "01-需求审阅/前端/前端-SLG插件.md"
+    },
+    {
+      "id": "frontend-mmo-plugin",
+      "name": "前端-MMO插件",
+      "category": "01-需求审阅/前端",
+      "description": "MMO游戏前端特定检查，包括多人同步、大规模渲染、UI优化等。",
+      "keywords": ["MMO", "多人", "同步", "渲染", "UI优化"],
+      "dependencies": ["游戏前端策划案评审"],
+      "size": 2700,
+      "priority": 3,
+      "optimized": true,
+      "file": "01-需求审阅/前端/前端-MMO插件.md"
+    },
+    {
+      "id": "frontend-chess-plugin",
+      "name": "前端-棋牌竞技插件",
+      "category": "01-需求审阅/前端",
+      "description": "棋牌竞技游戏前端特定检查，包括棋盘UI、棋子动画、操作反馈等。",
+      "keywords": ["棋牌", "竞技", "棋盘", "动画", "操作反馈"],
+      "dependencies": ["游戏前端策划案评审"],
+      "size": 2400,
+      "priority": 3,
+      "optimized": true,
+      "file": "01-需求审阅/前端/前端-棋牌竞技插件.md"
+    },
+    {
+      "id": "frontend-moba-plugin",
+      "name": "前端-MOBA插件",
+      "category": "01-需求审阅/前端",
+      "description": "MOBA游戏前端特定检查，包括英雄UI、技能特效、小地图等。",
+      "keywords": ["MOBA", "英雄", "技能", "特效", "小地图"],
+      "dependencies": ["游戏前端策划案评审"],
+      "size": 2600,
+      "priority": 3,
+      "optimized": true,
+      "file": "01-需求审阅/前端/前端-MOBA插件.md"
+    },
+    {
+      "id": "frontend-fps-plugin",
+      "name": "前端-FPS插件",
+      "category": "01-需求审阅/前端",
+      "description": "FPS游戏前端特定检查，包括射击界面、准星设计、武器UI、小地图、HUD等FPS特定内容。",
+      "keywords": ["FPS", "射击", "准星", "武器UI", "HUD"],
+      "dependencies": ["游戏前端策划案评审"],
+      "size": 3400,
+      "priority": 1,
+      "optimized": true,
+      "file": "01-需求审阅/前端/前端-FPS插件.md"
+    },
+    {
+      "id": "frontend-casual-plugin",
+      "name": "前端-休闲类插件",
+      "category": "01-需求审阅/前端",
+      "description": "休闲游戏前端特定检查，包括界面设计、交互体验、动画效果、音效设计、用户引导等休闲游戏特定内容。",
+      "keywords": ["休闲", "界面", "交互", "动画", "音效", "用户引导"],
+      "dependencies": ["游戏前端策划案评审"],
+      "size": 3200,
+      "priority": 2,
+      "optimized": true,
+      "file": "01-需求审阅/前端/前端-休闲类插件.md"
+    },
+    {
+      "id": "api-design-review",
+      "name": "游戏后端API设计审查",
+      "category": "02-设计审查",
+      "description": "API设计审查技能，检查接口设计、数据格式、错误处理、版本管理等。",
+      "keywords": ["API", "接口", "设计", "REST", "GraphQL"],
+      "dependencies": [],
+      "size": 3800,
+      "priority": 2,
+      "optimized": true,
+      "file": "02-设计审查/游戏后端API设计审查.md"
+    },
+    {
+      "id": "database-design-review",
+      "name": "游戏数据库设计审查",
+      "category": "02-设计审查",
+      "description": "数据库设计审查技能，检查表结构、索引设计、数据一致性、性能优化等。",
+      "keywords": ["数据库", "表结构", "索引", "SQL", "NoSQL"],
+      "dependencies": [],
+      "size": 3600,
+      "priority": 2,
+      "optimized": true,
+      "file": "02-设计审查/游戏数据库设计审查.md"
+    },
+    {
+      "id": "performance-risk-assessment",
+      "name": "游戏性能风险评估",
+      "category": "02-设计审查",
+      "description": "性能风险评估技能，识别潜在的性能瓶颈、资源消耗、并发问题等。",
+      "keywords": ["性能", "风险评估", "瓶颈", "优化", "并发"],
+      "dependencies": [],
+      "size": 3500,
+      "priority": 2,
+      "optimized": true,
+      "file": "02-设计审查/游戏性能风险评估.md"
+    },
+    {
+      "id": "network-architecture-review",
+      "name": "游戏网络架构审查",
+      "category": "02-设计审查",
+      "description": "网络架构设计审查技能，检查网络同步机制、延迟补偿、断线重连、负载均衡等网络相关设计。",
+      "keywords": ["网络", "同步", "延迟", "断线重连", "负载均衡"],
+      "dependencies": [],
+      "size": 4200,
+      "priority": 2,
+      "optimized": true,
+      "file": "02-设计审查/游戏网络架构审查.md"
+    },
+    {
+      "id": "security-design-review",
+      "name": "游戏安全设计审查",
+      "category": "02-设计审查",
+      "description": "游戏安全设计审查技能，检查反作弊系统、数据加密、账号安全、外挂防护等安全相关设计。",
+      "keywords": ["安全", "反作弊", "加密", "账号安全", "外挂防护"],
+      "dependencies": [],
+      "size": 4500,
+      "priority": 2,
+      "optimized": true,
+      "file": "02-设计审查/游戏安全设计审查.md"
+    },
+    {
+      "id": "config-table-detection",
+      "name": "配置表检测",
+      "category": "02-设计审查",
+      "description": "游戏配置表检测技能，支持单个文件检测、批量检测、智能检测（基于策划案）三种方式，包括字段类型检测、关联关系检测、数据完整性检测、逻辑一致性检测、性能优化建议、最佳实践检查等。",
+      "keywords": ["配置表", "Excel", "CSV", "JSON", "XML", "YAML", "数据检测", "关联关系", "批量检测", "目录检测", "策划案"],
+      "dependencies": [],
+      "size": 4200,
+      "priority": 1,
+      "optimized": true,
+      "file": "02-设计审查/配置表检测.md"
+    },
+    {
+      "id": "performance-optimization-guide",
+      "name": "游戏性能优化指南",
+      "category": "02-设计审查",
+      "description": "游戏性能优化指南技能，提供帧率优化、内存管理、网络性能、渲染性能等优化建议。",
+      "keywords": ["性能优化", "帧率", "内存管理", "渲染优化", "网络优化"],
+      "dependencies": [],
+      "size": 4800,
+      "priority": 2,
+      "optimized": true,
+      "file": "02-设计审查/游戏性能优化指南.md"
+    },
+    {
+      "id": "testing-strategy",
+      "name": "游戏测试策略",
+      "category": "08-测试策略",
+      "description": "游戏测试策略技能，提供自动化测试、性能测试、兼容性测试、A/B测试等测试策略。",
+      "keywords": ["测试", "自动化", "性能测试", "兼容性", "A/B测试"],
+      "dependencies": [],
+      "size": 4500,
+      "priority": 3,
+      "optimized": true,
+      "file": "07-测试策略/游戏测试策略.md"
+    },
+    {
+      "id": "go-adaptation",
+      "name": "Go适配",
+      "category": "03-技术栈适配",
+      "description": "Go语言游戏开发适配，包括并发模型、内存管理、性能优化等Go特定检查。",
+      "keywords": ["Go", "Golang", "并发", "goroutine", "channel"],
+      "dependencies": [],
+      "size": 3200,
+      "priority": 2,
+      "optimized": true,
+      "file": "03-技术栈适配/Go适配.md"
+    },
+    {
+      "id": "cpp-adaptation",
+      "name": "Cpp适配",
+      "category": "03-技术栈适配",
+      "description": "C++语言游戏开发适配，包括内存管理、指针使用、性能优化等C++特定检查。",
+      "keywords": ["C++", "内存", "指针", "性能", "STL"],
+      "dependencies": [],
+      "size": 3300,
+      "priority": 2,
+      "optimized": true,
+      "file": "03-技术栈适配/Cpp适配.md"
+    },
+    {
+      "id": "java-adaptation",
+      "name": "Java适配",
+      "category": "03-技术栈适配",
+      "description": "Java语言游戏开发适配，包括JVM优化、垃圾回收、多线程等Java特定检查。",
+      "keywords": ["Java", "JVM", "垃圾回收", "多线程", "Spring"],
+      "dependencies": [],
+      "size": 3100,
+      "priority": 2,
+      "optimized": true,
+      "file": "03-技术栈适配/Java适配.md"
+    },
+    {
+      "id": "cocos-creator-adaptation",
+      "name": "CocosCreator适配",
+      "category": "03-技术栈适配",
+      "description": "Cocos Creator游戏引擎适配，包括组件系统、资源管理、跨平台发布等。",
+      "keywords": ["Cocos Creator", "TypeScript", "组件", "跨平台"],
+      "dependencies": [],
+      "size": 3000,
+      "priority": 2,
+      "optimized": true,
+      "file": "03-技术栈适配/CocosCreator适配.md"
+    },
+    {
+      "id": "cocos-lua-adaptation",
+      "name": "CocosLua适配",
+      "category": "03-技术栈适配",
+      "description": "Cocos Lua脚本适配，包括Lua语法、性能优化、与C++交互等。",
+      "keywords": ["Cocos", "Lua", "脚本", "性能", "交互"],
+      "dependencies": [],
+      "size": 2900,
+      "priority": 2,
+      "optimized": true,
+      "file": "03-技术栈适配/CocosLua适配.md"
+    },
+    {
+      "id": "unity-adaptation",
+      "name": "Unity适配",
+      "category": "03-技术栈适配",
+      "description": "Unity游戏引擎适配，包括C#脚本、组件系统、性能优化、平台适配等。",
+      "keywords": ["Unity", "C#", "组件", "性能", "平台适配"],
+      "dependencies": [],
+      "size": 3400,
+      "priority": 2,
+      "optimized": true,
+      "file": "03-技术栈适配/Unity适配.md"
+    },
+    {
+      "id": "unreal-engine-adaptation",
+      "name": "UnrealEngine适配",
+      "category": "03-技术栈适配",
+      "description": "Unreal Engine游戏开发适配，包括蓝图系统、C++编程、性能优化、渲染管线、跨平台发布等UE特定检查。",
+      "keywords": ["Unreal", "UE", "蓝图", "C++", "渲染", "跨平台"],
+      "dependencies": [],
+      "size": 3500,
+      "priority": 1,
+      "optimized": true,
+      "file": "03-技术栈适配/UnrealEngine适配.md"
+    },
+    {
+      "id": "python-adaptation",
+      "name": "Python适配",
+      "category": "03-技术栈适配",
+      "description": "Python游戏开发适配，包括快速开发、独立游戏、Web游戏、数据分析、脚本化开发等Python特定检查。",
+      "keywords": ["Python", "快速开发", "独立游戏", "Web游戏", "数据分析"],
+      "dependencies": [],
+      "size": 3200,
+      "priority": 2,
+      "optimized": true,
+      "file": "03-技术栈适配/Python适配.md"
+    },
+    {
+      "id": "nodejs-adaptation",
+      "name": "Nodejs适配",
+      "category": "03-技术栈适配",
+      "description": "Node.js游戏开发适配，包括Web游戏、实时游戏、JavaScript全栈、WebSocket通信、快速开发等Node.js特定检查。",
+      "keywords": ["Node.js", "Web游戏", "实时游戏", "WebSocket", "JavaScript"],
+      "dependencies": [],
+      "size": 3300,
+      "priority": 2,
+      "optimized": true,
+      "file": "03-技术栈适配/Nodejs适配.md"
+    },
+    {
+      "id": "code-review",
+      "name": "代码审查",
+      "category": "04-代码质量",
+      "description": "代码审查技能，检查代码质量、最佳实践、潜在bug、性能问题等。",
+      "keywords": ["代码审查", "代码质量", "最佳实践", "bug", "重构"],
+      "dependencies": [],
+      "size": 4000,
+      "priority": 2,
+      "optimized": true,
+      "file": "04-代码质量/代码审查.md"
+    },
+    {
+      "id": "unit-test-generation",
+      "name": "单元测试生成",
+      "category": "04-代码质量",
+      "description": "单元测试生成技能，为代码生成完整的单元测试用例和测试框架。",
+      "keywords": ["单元测试", "测试用例", "测试框架", "TDD"],
+      "dependencies": [],
+      "size": 3700,
+      "priority": 2,
+      "optimized": true,
+      "file": "04-代码质量/单元测试生成.md"
+    },
+    {
+      "id": "api-doc-generator",
+      "name": "api-doc-generator",
+      "category": "05-文档生成",
+      "description": "API文档生成技能，根据代码或接口定义生成完整的API文档。",
+      "keywords": ["API文档", "文档生成", "接口文档", "Swagger"],
+      "dependencies": [],
+      "size": 3200,
+      "priority": 2,
+      "optimized": true,
+      "file": "05-文档生成/api-doc-gennerator.md"
+    },
+    {
+      "id": "qa-test-doc-generator",
+      "name": "qa-test-doc-generator",
+      "category": "05-文档生成",
+      "description": "QA测试文档生成技能，生成完整的测试计划和测试用例文档。",
+      "keywords": ["QA", "测试文档", "测试计划", "测试用例"],
+      "dependencies": [],
+      "size": 3400,
+      "priority": 2,
+      "optimized": true,
+      "file": "05-文档生成/qa-test-doc-gennerator.md"
+    },
+    {
+      "id": "qa-moba-plugin",
+      "name": "qa-MOBA插件",
+      "category": "05-文档生成/qa-plugins",
+      "description": "MOBA游戏QA测试场景，包括英雄测试、地图测试、平衡性测试等。",
+      "keywords": ["MOBA", "QA", "测试场景", "英雄", "平衡性"],
+      "dependencies": ["qa-test-doc-generator"],
+      "size": 2500,
+      "priority": 3,
+      "optimized": true,
+      "file": "05-文档生成/qa-plugins/qa-MOBA插件.md"
+    },
+    {
+      "id": "qa-card-rpg-plugin",
+      "name": "qa-卡牌RPG插件",
+      "category": "05-文档生成/qa-plugins",
+      "description": "卡牌RPG游戏QA测试场景，包括卡牌测试、抽卡测试、战斗测试等。",
+      "keywords": ["卡牌", "RPG", "QA", "抽卡", "战斗测试"],
+      "dependencies": ["qa-test-doc-generator"],
+      "size": 2400,
+      "priority": 3,
+      "optimized": true,
+      "file": "05-文档生成/qa-plugins/qa-卡牌RPG插件.md"
+    },
+    {
+      "id": "qa-slg-plugin",
+      "name": "qa-SLG插件",
+      "category": "05-文档生成/qa-plugins",
+      "description": "SLG游戏QA测试场景，包括地图测试、资源测试、AI测试等。",
+      "keywords": ["SLG", "策略", "QA", "地图测试", "AI测试"],
+      "dependencies": ["qa-test-doc-generator"],
+      "size": 2300,
+      "priority": 3,
+      "optimized": true,
+      "file": "05-文档生成/qa-plugins/qa-SLG插件.md"
+    },
+    {
+      "id": "qa-mmo-plugin",
+      "name": "qa-MMO插件",
+      "category": "05-文档生成/qa-plugins",
+      "description": "MMO游戏QA测试场景，包括多人测试、压力测试、同步测试等。",
+      "keywords": ["MMO", "多人", "QA", "压力测试", "同步测试"],
+      "dependencies": ["qa-test-doc-generator"],
+      "size": 2600,
+      "priority": 3,
+      "optimized": true,
+      "file": "05-文档生成/qa-plugins/qa-MMO插件.md"
+    },
+    {
+      "id": "qa-chess-plugin",
+      "name": "qa-棋牌竞技插件",
+      "category": "05-文档生成/qa-plugins",
+      "description": "棋牌竞技游戏QA测试场景，包括规则测试、匹配测试、防作弊测试等。",
+      "keywords": ["棋牌", "竞技", "QA", "规则测试", "防作弊"],
+      "dependencies": ["qa-test-doc-generator"],
+      "size": 2300,
+      "priority": 3,
+      "optimized": true,
+      "file": "05-文档生成/qa-plugins/qa-棋牌竞技插件.md"
+    },
+    {
+      "id": "qa-fps-plugin",
+      "name": "qa-FPS插件",
+      "category": "05-文档生成/qa-plugins",
+      "description": "FPS游戏QA测试场景，包括射击测试、网络同步测试、反作弊测试、匹配测试等FPS特定测试。",
+      "keywords": ["FPS", "射击", "QA", "网络同步", "反作弊"],
+      "dependencies": ["qa-test-doc-generator"],
+      "size": 3500,
+      "priority": 1,
+      "optimized": true,
+      "file": "05-文档生成/qa-plugins/qa-FPS插件.md"
+    },
+    {
+      "id": "qa-casual-plugin",
+      "name": "qa-休闲类插件",
+      "category": "05-文档生成/qa-plugins",
+      "description": "休闲游戏QA测试场景，包括关卡测试、成就测试、社交测试、数据分析测试、推送测试等休闲游戏特定测试。",
+      "keywords": ["休闲", "关卡", "成就", "社交", "QA", "数据分析", "推送"],
+      "dependencies": ["qa-test-doc-generator"],
+      "size": 3200,
+      "priority": 2,
+      "optimized": true,
+      "file": "05-文档生成/qa-plugins/qa-休闲类插件.md"
+    },
+    {
+      "id": "backend-orchestration",
+      "name": "游戏后端总控审阅",
+      "category": "06-总控",
+      "description": "后端总控技能，协调后端策划案评审、API设计审查、数据库设计审查等后端相关技能。",
+      "keywords": ["后端", "总控", "协调", "架构", "设计"],
+      "dependencies": ["游戏后端策划案评审", "游戏后端API设计审查", "游戏数据库设计审查"],
+      "size": 3500,
+      "priority": 1,
+      "optimized": true,
+      "file": "06-总控/游戏后端总控审阅.md"
+    },
+    {
+      "id": "frontend-orchestration",
+      "name": "游戏前端总控审阅",
+      "category": "06-总控",
+      "description": "前端总控技能，协调前端策划案评审、性能评估、技术栈适配等前端相关技能。",
+      "keywords": ["前端", "总控", "协调", "UI", "性能"],
+      "dependencies": ["游戏前端策划案评审", "游戏性能风险评估"],
+      "size": 3300,
+      "priority": 1,
+      "optimized": true,
+      "file": "06-总控/游戏前端总控审阅.md"
+    }
+  ],
+  "categories": {
+    "00-入口": {
+      "name": "入口",
+      "description": "顶层入口技能，自动路由到相关技能",
+      "skillCount": 1,
+      "totalSize": 2500
+    },
+    "01-需求审阅": {
+      "name": "需求审阅",
+      "description": "前后端策划案评审和游戏类型插件",
+      "skillCount": 15,
+      "totalSize": 41600,
+      "subcategories": {
+        "后端": 7,
+        "前端": 7
+      }
+    },
+    "02-设计审查": {
+      "name": "设计审查",
+      "description": "API、数据库、性能、网络、安全、配置表设计审查",
+      "skillCount": 7,
+      "totalSize": 29500
+    },
+    "03-技术栈适配": {
+      "name": "技术栈适配",
+      "description": "Go、C++、Java、Cocos、Unity、Unreal、Python、Node.js技术栈适配",
+      "skillCount": 9,
+      "totalSize": 28900
+    },
+    "04-代码质量": {
+      "name": "代码质量",
+      "description": "代码审查和单元测试生成",
+      "skillCount": 2,
+      "totalSize": 7700
+    },
+    "05-文档生成": {
+      "name": "文档生成",
+      "description": "API文档和QA测试文档生成",
+      "skillCount": 9,
+      "totalSize": 25600,
+      "subcategories": {
+        "qa-plugins": 7
+      }
+    },
+    "06-总控": {
+      "name": "总控",
+      "description": "前后端总控协调技能",
+      "skillCount": 2,
+      "totalSize": 6800
+    },
+    "07-测试策略": {
+      "name": "测试策略",
+      "description": "自动化测试和测试框架设计",
+      "skillCount": 1,
+      "totalSize": 4500
+    }
+  },
+  "gameTypes": {
+    "卡牌RPG": {
+      "skills": ["后端-卡牌RPG插件", "前端-卡牌RPG插件", "qa-卡牌RPG插件"],
+      "coverage": "完整"
+    },
+    "SLG": {
+      "skills": ["后端-SLG插件", "前端-SLG插件", "qa-SLG插件"],
+      "coverage": "完整"
+    },
+    "MMO": {
+      "skills": ["后端-MMO插件", "前端-MMO插件", "qa-MMO插件"],
+      "coverage": "完整"
+    },
+    "MOBA": {
+      "skills": ["后端-MOBA插件", "前端-MOBA插件", "qa-MOBA插件"],
+      "coverage": "完整"
+    },
+    "FPS": {
+      "skills": ["后端-FPS插件", "前端-FPS插件", "qa-FPS插件"],
+      "coverage": "完整"
+    },
+    "棋牌竞技": {
+      "skills": ["后端-棋牌竞技插件", "前端-棋牌竞技插件", "qa-棋牌竞技插件"],
+      "coverage": "完整"
+    },
+    "休闲类": {
+      "skills": ["后端-休闲类插件", "前端-休闲类插件", "qa-休闲类插件"],
+      "coverage": "完整"
+    }
+  },
+  "techStacks": {
+    "Go": {
+      "skill": "Go适配",
+      "category": "后端"
+    },
+    "C++": {
+      "skill": "Cpp适配",
+      "category": "后端"
+    },
+    "Java": {
+      "skill": "Java适配",
+      "category": "后端"
+    },
+    "Cocos Creator": {
+      "skill": "CocosCreator适配",
+      "category": "前端"
+    },
+    "Cocos Lua": {
+      "skill": "CocosLua适配",
+      "category": "前端"
+    },
+    "Unity": {
+      "skill": "Unity适配",
+      "category": "前端"
+    }
+  },
+  "optimization": {
+    "enabled": true,
+    "strategy": "smart-loading",
+    "maxTokensPerRequest": 10000,
+    "cacheEnabled": true,
+    "compressionEnabled": true
+  }
+}

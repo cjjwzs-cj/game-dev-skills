@@ -1,0 +1,525 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-04-26",
+  "gameTypes": {
+    "RPG": {
+      "name": "RPG（角色扮演）",
+      "priority": 1,
+      "marketShare": "highest",
+      "subTypes": ["卡牌RPG", "回合制RPG", "ARPG", "MMORPG"],
+      "backend": {
+        "specificChecks": [
+          "角色成长系统",
+          "装备系统",
+          "技能系统",
+          "任务系统",
+          "副本系统",
+          "经济系统"
+        ],
+        "riskAreas": [
+          "数值平衡",
+          "经济平衡",
+          "成长曲线",
+          "装备强度",
+          "技能平衡"
+        ],
+        "performanceFocus": [
+          "数据库性能",
+          "并发处理",
+          "缓存策略",
+          "数据一致性"
+        ]
+      },
+      "frontend": {
+        "specificChecks": [
+          "角色界面",
+          "装备界面",
+          "技能界面",
+          "任务界面",
+          "副本界面",
+          "背包系统"
+        ],
+        "riskAreas": [
+          "界面响应",
+          "动画性能",
+          "加载时间",
+          "UI清晰度"
+        ],
+        "performanceFocus": [
+          "渲染性能",
+          "内存管理",
+          "资源加载",
+          "动画优化"
+        ]
+      },
+      "qa": {
+        "specificTests": [
+          "角色成长测试",
+          "装备系统测试",
+          "技能系统测试",
+          "任务系统测试",
+          "副本系统测试",
+          "经济系统测试"
+        ],
+        "focusAreas": [
+          "数值准确性",
+          "系统稳定性",
+          "边界情况",
+          "异常处理"
+        ]
+      }
+    },
+    "FPS": {
+      "name": "FPS（射击）",
+      "priority": 1,
+      "marketShare": "fastestGrowing",
+      "subTypes": ["竞技FPS", "生存FPS", "战术FPS", "射击RPG"],
+      "backend": {
+        "specificChecks": [
+          "射击系统",
+          "弹道计算",
+          "命中检测",
+          "网络同步",
+          "延迟补偿",
+          "反作弊系统",
+          "匹配系统"
+        ],
+        "riskAreas": [
+          "网络延迟",
+          "命中准确性",
+          "反作弊效果",
+          "匹配平衡",
+          "服务器性能"
+        ],
+        "performanceFocus": [
+          "低延迟网络",
+          "高并发处理",
+          "实时同步",
+          "预测算法"
+        ]
+      },
+      "frontend": {
+        "specificChecks": [
+          "射击界面",
+          "准星设计",
+          "武器UI",
+          "小地图",
+          "HUD设计",
+          "视角控制"
+        ],
+        "riskAreas": [
+          "射击手感",
+          "界面响应",
+          "视角流畅",
+          "HUD清晰度"
+        ],
+        "performanceFocus": [
+          "高帧率",
+          "低延迟",
+          "渲染优化",
+          "输入响应"
+        ]
+      },
+      "qa": {
+        "specificTests": [
+          "射击系统测试",
+          "网络同步测试",
+          "反作弊测试",
+          "匹配系统测试",
+          "延迟补偿测试"
+        ],
+        "focusAreas": [
+          "射击准确性",
+          "网络稳定性",
+          "反作弊效果",
+          "匹配公平性"
+        ]
+      }
+    },
+    "MOBA": {
+      "name": "MOBA（多人在线战术竞技）",
+      "priority": 2,
+      "marketShare": "high",
+      "subTypes": ["传统MOBA", "快节奏MOBA", "3D MOBA"],
+      "backend": {
+        "specificChecks": [
+          "英雄系统",
+          "技能系统",
+          "匹配系统",
+          "排位系统",
+          "平衡性调整"
+        ],
+        "riskAreas": [
+          "英雄平衡",
+          "技能平衡",
+          "匹配公平",
+          "排位系统",
+          "平衡性调整"
+        ],
+        "performanceFocus": [
+          "实时同步",
+          "低延迟",
+          "高并发",
+          "负载均衡"
+        ]
+      },
+      "frontend": {
+        "specificChecks": [
+          "英雄选择界面",
+          "战斗界面",
+          "小地图",
+          "商店界面",
+          "技能UI"
+        ],
+        "riskAreas": [
+          "界面清晰",
+          "操作响应",
+          "信息显示",
+          "性能优化"
+        ],
+        "performanceFocus": [
+          "高帧率",
+          "低延迟",
+          "渲染优化",
+          "UI响应"
+        ]
+      },
+      "qa": {
+        "specificTests": [
+          "英雄系统测试",
+          "技能系统测试",
+          "匹配系统测试",
+          "排位系统测试",
+          "平衡性测试"
+        ],
+        "focusAreas": [
+          "英雄平衡",
+          "技能准确性",
+          "匹配公平",
+          "系统稳定"
+        ]
+      }
+    },
+    "SLG": {
+      "name": "SLG（策略游戏）",
+      "priority": 2,
+      "marketShare": "stable",
+      "subTypes": ["传统SLG", "现代SLG", "4X策略"],
+      "backend": {
+        "specificChecks": [
+          "地图系统",
+          "资源管理",
+          "AI决策",
+          "战斗计算",
+          "联盟系统"
+        ],
+        "riskAreas": [
+          "地图性能",
+          "资源平衡",
+          "AI复杂度",
+          "战斗平衡",
+          "联盟管理"
+        ],
+        "performanceFocus": [
+          "大规模计算",
+          "AI优化",
+          "数据库性能",
+          "缓存策略"
+        ]
+      },
+      "frontend": {
+        "specificChecks": [
+          "地图界面",
+          "资源界面",
+          "建筑界面",
+          "联盟界面",
+          "战斗界面"
+        ],
+        "riskAreas": [
+          "地图性能",
+          "界面响应",
+          "信息清晰",
+          "操作便捷"
+        ],
+        "performanceFocus": [
+          "地图渲染",
+          "大规模单位",
+          "内存管理",
+          "资源优化"
+        ]
+      },
+      "qa": {
+        "specificTests": [
+          "地图系统测试",
+          "资源管理测试",
+          "AI决策测试",
+          "战斗计算测试",
+          "联盟系统测试"
+        ],
+        "focusAreas": [
+          "地图准确性",
+          "资源平衡",
+          "AI智能",
+          "战斗公平"
+        ]
+      }
+    },
+    "MMO": {
+      "name": "MMO（大型多人在线）",
+      "priority": 2,
+      "marketShare": "high",
+      "subTypes": ["MMORPG", "MMOFPS", "MMORTS"],
+      "backend": {
+        "specificChecks": [
+          "大规模并发",
+          "跨服数据",
+          "世界分区",
+          "玩家同步",
+          "数据一致性"
+        ],
+        "riskAreas": [
+          "并发性能",
+          "跨服同步",
+          "数据一致性",
+          "负载均衡",
+          "扩展性"
+        ],
+        "performanceFocus": [
+          "高并发处理",
+          "分布式架构",
+          "数据库优化",
+          "缓存策略"
+        ]
+      },
+      "frontend": {
+        "specificChecks": [
+          "大规模玩家渲染",
+          "世界分区界面",
+          "社交界面",
+          "任务界面",
+          "副本界面"
+        ],
+        "riskAreas": [
+          "渲染性能",
+          "内存占用",
+          "网络延迟",
+          "界面响应"
+        ],
+        "performanceFocus": [
+          "大规模渲染",
+          "LOD优化",
+          "资源流式加载",
+          "内存管理"
+        ]
+      },
+      "qa": {
+        "specificTests": [
+          "大规模并发测试",
+          "跨服功能测试",
+          "数据同步测试",
+          "压力测试",
+          "稳定性测试"
+        ],
+        "focusAreas": [
+          "并发性能",
+          "数据一致性",
+          "系统稳定",
+          "扩展性"
+        ]
+      }
+    },
+    "棋牌竞技": {
+      "name": "棋牌竞技",
+      "priority": 3,
+      "marketShare": "niche",
+      "subTypes": ["象棋", "围棋", "扑克", "麻将", "其他棋类"],
+      "backend": {
+        "specificChecks": [
+          "规则逻辑",
+          "房间系统",
+          "匹配系统",
+          "防作弊",
+          "断线重连"
+        ],
+        "riskAreas": [
+          "规则准确性",
+          "房间管理",
+          "匹配公平",
+          "防作弊效果",
+          "重连机制"
+        ],
+        "performanceFocus": [
+          "规则计算",
+          "房间管理",
+          "匹配效率",
+          "数据一致性"
+        ]
+      },
+      "frontend": {
+        "specificChecks": [
+          "棋盘界面",
+          "棋子界面",
+          "房间界面",
+          "个人中心",
+          "排行榜"
+        ],
+        "riskAreas": [
+          "界面清晰",
+          "操作便捷",
+          "动画流畅",
+          "响应及时"
+        ],
+        "performanceFocus": [
+          "界面渲染",
+          "动画优化",
+          "内存管理",
+          "加载速度"
+        ]
+      },
+      "qa": {
+        "specificTests": [
+          "规则逻辑测试",
+          "房间系统测试",
+          "匹配系统测试",
+          "防作弊测试",
+          "断线测试"
+        ],
+        "focusAreas": [
+          "规则准确性",
+          "系统稳定",
+          "防作弊效果",
+          "用户体验"
+        ]
+      }
+    },
+    "休闲类": {
+      "name": "休闲类",
+      "priority": 3,
+      "marketShare": "high",
+      "subTypes": ["益智", "消除", "跑酷", "音乐", "其他休闲"],
+      "backend": {
+        "specificChecks": [
+          "关卡系统",
+          "成就系统",
+          "社交功能",
+          "数据分析",
+          "推送系统"
+        ],
+        "riskAreas": [
+          "关卡设计",
+          "难度平衡",
+          "社交互动",
+          "数据准确",
+          "推送效果"
+        ],
+        "performanceFocus": [
+          "快速响应",
+          "低延迟",
+          "高并发",
+          "数据分析"
+        ]
+      },
+      "frontend": {
+        "specificChecks": [
+          "游戏界面",
+          "关卡界面",
+          "成就界面",
+          "社交界面",
+          "设置界面"
+        ],
+        "riskAreas": [
+          "界面简洁",
+          "操作简单",
+          "动画流畅",
+          "加载快速"
+        ],
+        "performanceFocus": [
+          "快速加载",
+          "低内存",
+          "流畅动画",
+          "电池优化"
+        ]
+      },
+      "qa": {
+        "specificTests": [
+          "关卡测试",
+          "成就测试",
+          "社交测试",
+          "性能测试",
+          "兼容性测试"
+        ],
+        "focusAreas": [
+          "关卡设计",
+          "用户体验",
+          "系统稳定",
+          "性能表现"
+        ]
+      }
+    }
+  },
+  "techStacks": {
+    "Go": {
+      "name": "Go",
+      "type": "backend",
+      "features": ["高并发", "低延迟", "内存安全", "快速编译"],
+      "bestFor": ["高并发服务", "微服务", "实时系统"],
+      "considerations": ["goroutine管理", "channel通信", "GC调优"]
+    },
+    "C++": {
+      "name": "C++",
+      "type": "backend",
+      "features": ["高性能", "底层控制", "跨平台", "丰富生态"],
+      "bestFor": ["游戏引擎", "底层系统", "性能关键"],
+      "considerations": ["内存管理", "指针安全", "跨平台兼容"]
+    },
+    "Java": {
+      "name": "Java",
+      "type": "backend",
+      "features": ["企业级", "丰富生态", "跨平台", "强类型"],
+      "bestFor": ["企业应用", "大型系统", "稳定服务"],
+      "considerations": ["JVM调优", "内存管理", "GC优化"]
+    },
+    "Unity": {
+      "name": "Unity",
+      "type": "frontend",
+      "features": ["3D引擎", "跨平台", "丰富资产", "C#脚本"],
+      "bestFor": ["3D游戏", "移动游戏", "跨平台"],
+      "considerations": ["性能优化", "内存管理", "平台适配"]
+    },
+    "Cocos Creator": {
+      "name": "Cocos Creator",
+      "type": "frontend",
+      "features": ["2D/3D", "TypeScript", "跨平台", "轻量级"],
+      "bestFor": ["2D游戏", "移动游戏", "快速开发"],
+      "considerations": ["性能优化", "内存管理", "平台适配"]
+    },
+    "Cocos Lua": {
+      "name": "Cocos Lua",
+      "type": "frontend",
+      "features": ["Lua脚本", "快速开发", "轻量级", "跨平台"],
+      "bestFor": ["2D游戏", "快速原型", "热更新"],
+      "considerations": ["Lua优化", "性能调优", "热更新机制"]
+    },
+    "Unreal Engine": {
+      "name": "Unreal Engine",
+      "type": "frontend",
+      "features": ["高质量渲染", "蓝图系统", "C++支持", "跨平台"],
+      "bestFor": ["3D游戏", "高质量游戏", "大型项目"],
+      "considerations": ["蓝图优化", "C++编程", "性能调优"]
+    },
+    "Python": {
+      "name": "Python",
+      "type": "backend",
+      "features": ["快速开发", "丰富库", "易学易用", "跨平台"],
+      "bestFor": ["独立游戏", "快速原型", "Web游戏"],
+      "considerations": ["性能优化", "C扩展", "多线程"]
+    },
+    "Node.js": {
+      "name": "Node.js",
+      "type": "backend",
+      "features": ["JavaScript全栈", "实时通信", "快速开发", "丰富生态"],
+      "bestFor": ["Web游戏", "实时游戏", "快速开发"],
+      "considerations": ["异步编程", "内存管理", "事件循环"]
+    }
+  }
+}
