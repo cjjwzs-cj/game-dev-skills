@@ -59,9 +59,25 @@ Professional AI skill library for game development — 47 production-ready skill
 
 ## 📦 Installation
 
-### NPM Installation
+### Using Official Skills CLI (Recommended)
 ```bash
-npm install game-dev-skills
+# Install using official skills CLI tool
+npx skills add https://github.com/cjjwzs-cj/game-dev-skills
+
+# Or using short form
+npx skills add cjjwzs-cj/game-dev-skills
+```
+
+### Using Claude Plugin Marketplace
+```bash
+# Add to Claude Code plugin marketplace
+/plugin marketplace add https://github.com/cjjwzs-cj/game-dev-skills
+
+# Browse available skills
+/plugin menu
+
+# Install a specific skill
+/plugin install <skill-name>
 ```
 
 ### Manual Installation
@@ -70,24 +86,20 @@ npm install game-dev-skills
 git clone https://github.com/cjjwzs-cj/game-dev-skills.git
 cd game-dev-skills
 
-# Install dependencies
-npm install
-
-# Link for local testing
-npm link
-
-# Install to specific AI tool
-AI_TOOL=.claude npm run install
+# Copy skills to your AI tool
+cp -r skills/* ~/.claude/skills/
+# Or for Trae: cp -r skills/* ~/.trae/skills/
+# Or for Cursor: cp -r skills/* ~/.cursor/skills/
 ```
 
-After installation, skills are automatically copied to `.claude/skills/` (or `.trae/skills/`, `.codex/skills/`).
+After installation, skills are available in your AI tool's skills directory.
 
 ## 🚀 Quick Start
 
 ### For AI Coding Assistants
 ```bash
-# Install skills
-npm install game-dev-skills
+# Install skills using installer
+npx game-dev-skills-installer
 
 # Open your AI tool (Claude Code, Trae, Codex, etc.)
 claude
@@ -97,16 +109,15 @@ claude
 > 用游戏后端策划案评审审阅 docs/策划案.md
 ```
 
-### For Trae
+### Manual Installation
 ```bash
-npm install game-dev-skills
-AI_TOOL=.trae npm install game-dev-skills
-```
+# Clone and copy skills manually
+git clone https://github.com/cjjwzs-cj/game-dev-skills.git
+cp -r game-dev-skills/skills/* ~/.claude/skills/
 
-### For Codex
-```bash
-npm install game-dev-skills
-AI_TOOL=.codex npm install game-dev-skills
+# Then use in your AI tool
+claude
+> /skills
 ```
 
 ## 🛠️ Usage

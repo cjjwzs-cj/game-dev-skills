@@ -1,0 +1,323 @@
+{
+  "name": "game-dev-skills",
+  "version": "1.0.0",
+  "displayName": "🎮 Game Development Skills",
+  "description": "Complete AI skill library for game development - 47 production-ready skills with intelligent error handling",
+  "author": "陈建军 <jianjun.chen@example.com>",
+  "license": "MIT",
+  "repository": "https://github.com/cjjwzs-cj/game-dev-skills",
+  "homepage": "https://github.com/cjjwzs-cj/game-dev-skills#readme",
+  "bugs": "https://github.com/cjjwzs-cj/game-dev-skills/issues",
+  "skills": [
+    {
+      "id": "entry-review",
+      "name": "游戏策划案总审阅",
+      "description": "顶层入口技能。自动判断策划案需要后端审阅、前端审阅还是两者都需要，然后调用对应的总控技能。",
+      "file": "skills/00-入口/游戏策划案总审阅.md",
+      "category": "入口",
+      "keywords": ["策划案", "审阅", "评审", "游戏", "入口"],
+      "priority": 1
+    },
+    {
+      "id": "backend-planning-review",
+      "name": "游戏后端策划案评审",
+      "description": "后端策划案评审技能，检查服务器架构、API设计、数据库设计、性能考虑等后端相关内容。",
+      "file": "skills/01-需求审阅/后端/游戏后端策划案评审.md",
+      "category": "需求审阅",
+      "keywords": ["后端", "服务器", "API", "数据库", "架构", "性能"],
+      "priority": 2
+    },
+    {
+      "id": "frontend-planning-review",
+      "name": "游戏前端策划案评审",
+      "description": "前端策划案评审技能，检查UI设计、交互逻辑、性能优化、适配性等前端相关内容。",
+      "file": "skills/01-需求审阅/前端/游戏前端策划案评审.md",
+      "category": "需求审阅",
+      "keywords": ["前端", "UI", "界面", "交互", "适配"],
+      "priority": 2
+    },
+    {
+      "id": "api-design-review",
+      "name": "游戏后端API设计审查",
+      "description": "API设计审查技能，检查接口设计、数据格式、错误处理、版本管理等。",
+      "file": "skills/02-设计审查/游戏后端API设计审查.md",
+      "category": "设计审查",
+      "keywords": ["API", "接口", "设计", "REST", "GraphQL"],
+      "priority": 2
+    },
+    {
+      "id": "database-design-review",
+      "name": "游戏数据库设计审查",
+      "description": "数据库设计审查技能，检查表结构、索引设计、数据一致性、性能优化等。",
+      "file": "skills/02-设计审查/游戏数据库设计审查.md",
+      "category": "设计审查",
+      "keywords": ["数据库", "表结构", "索引", "SQL", "NoSQL"],
+      "priority": 2
+    },
+    {
+      "id": "security-design-review",
+      "name": "游戏安全设计审查",
+      "description": "游戏安全设计审查技能，检查反作弊系统、数据加密、账号安全、外挂防护等安全相关设计。",
+      "file": "skills/02-设计审查/游戏安全设计审查.md",
+      "category": "设计审查",
+      "keywords": ["安全", "反作弊", "加密", "账号安全", "外挂防护"],
+      "priority": 2
+    },
+    {
+      "id": "network-architecture-review",
+      "name": "游戏网络架构审查",
+      "description": "网络架构设计审查技能，检查网络同步机制、延迟补偿、断线重连、负载均衡等网络相关设计。",
+      "file": "skills/02-设计审查/游戏网络架构审查.md",
+      "category": "设计审查",
+      "keywords": ["网络", "同步", "延迟", "断线重连", "负载均衡"],
+      "priority": 2
+    },
+    {
+      "id": "performance-risk-assessment",
+      "name": "游戏性能风险评估",
+      "description": "性能风险评估技能，识别潜在的性能瓶颈、资源消耗、并发问题等。",
+      "file": "skills/02-设计审查/游戏性能风险评估.md",
+      "category": "设计审查",
+      "keywords": ["性能", "风险评估", "瓶颈", "优化", "并发"],
+      "priority": 2
+    },
+    {
+      "id": "performance-optimization-guide",
+      "name": "游戏性能优化指南",
+      "description": "游戏性能优化指南技能，提供帧率优化、内存管理、网络性能、渲染性能等优化建议。",
+      "file": "skills/02-设计审查/游戏性能优化指南.md",
+      "category": "设计审查",
+      "keywords": ["性能优化", "帧率", "内存管理", "渲染优化", "网络优化"],
+      "priority": 2
+    },
+    {
+      "id": "config-table-detection",
+      "name": "配置表检测",
+      "description": "游戏配置表检测技能，支持单个文件检测、批量检测、智能检测（基于策划案）三种方式。",
+      "file": "skills/02-设计审查/配置表检测.md",
+      "category": "设计审查",
+      "keywords": ["配置表", "Excel", "CSV", "JSON", "XML", "YAML", "数据检测"],
+      "priority": 1
+    },
+    {
+      "id": "unity-adaptation",
+      "name": "Unity适配",
+      "description": "Unity游戏引擎适配，包括C#脚本、组件系统、性能优化、平台适配等。",
+      "file": "skills/03-技术栈适配/Unity适配.md",
+      "category": "技术栈适配",
+      "keywords": ["Unity", "C#", "组件", "性能", "平台适配"],
+      "priority": 2
+    },
+    {
+      "id": "unreal-engine-adaptation",
+      "name": "UnrealEngine适配",
+      "description": "Unreal Engine游戏开发适配，包括蓝图系统、C++编程、性能优化、渲染管线、跨平台发布等UE特定检查。",
+      "file": "skills/03-技术栈适配/UnrealEngine适配.md",
+      "category": "技术栈适配",
+      "keywords": ["Unreal", "UE", "蓝图", "C++", "渲染", "跨平台"],
+      "priority": 1
+    },
+    {
+      "id": "cocos-creator-adaptation",
+      "name": "CocosCreator适配",
+      "description": "Cocos Creator游戏引擎适配，包括组件系统、资源管理、跨平台发布等。",
+      "file": "skills/03-技术栈适配/CocosCreator适配.md",
+      "category": "技术栈适配",
+      "keywords": ["Cocos Creator", "TypeScript", "组件", "跨平台"],
+      "priority": 2
+    },
+    {
+      "id": "cocos-lua-adaptation",
+      "name": "CocosLua适配",
+      "description": "Cocos Lua脚本适配，包括Lua语法、性能优化、与C++交互等。",
+      "file": "skills/03-技术栈适配/CocosLua适配.md",
+      "category": "技术栈适配",
+      "keywords": ["Cocos", "Lua", "脚本", "性能", "交互"],
+      "priority": 2
+    },
+    {
+      "id": "go-adaptation",
+      "name": "Go适配",
+      "description": "Go语言游戏开发适配，包括并发模型、内存管理、性能优化等Go特定检查。",
+      "file": "skills/03-技术栈适配/Go适配.md",
+      "category": "技术栈适配",
+      "keywords": ["Go", "Golang", "并发", "goroutine", "channel"],
+      "priority": 2
+    },
+    {
+      "id": "cpp-adaptation",
+      "name": "Cpp适配",
+      "description": "C++语言游戏开发适配，包括内存管理、指针使用、性能优化等C++特定检查。",
+      "file": "skills/03-技术栈适配/Cpp适配.md",
+      "category": "技术栈适配",
+      "keywords": ["C++", "内存", "指针", "性能", "STL"],
+      "priority": 2
+    },
+    {
+      "id": "java-adaptation",
+      "name": "Java适配",
+      "description": "Java语言游戏开发适配，包括JVM优化、垃圾回收、多线程等Java特定检查。",
+      "file": "skills/03-技术栈适配/Java适配.md",
+      "category": "技术栈适配",
+      "keywords": ["Java", "JVM", "垃圾回收", "多线程", "Spring"],
+      "priority": 2
+    },
+    {
+      "id": "python-adaptation",
+      "name": "Python适配",
+      "description": "Python游戏开发适配，包括快速开发、独立游戏、Web游戏、数据分析、脚本化开发等Python特定检查。",
+      "file": "skills/03-技术栈适配/Python适配.md",
+      "category": "技术栈适配",
+      "keywords": ["Python", "快速开发", "独立游戏", "Web游戏", "数据分析"],
+      "priority": 2
+    },
+    {
+      "id": "nodejs-adaptation",
+      "name": "Nodejs适配",
+      "description": "Node.js游戏开发适配，包括Web游戏、实时游戏、JavaScript全栈、WebSocket通信、快速开发等Node.js特定检查。",
+      "file": "skills/03-技术栈适配/Nodejs适配.md",
+      "category": "技术栈适配",
+      "keywords": ["Node.js", "Web游戏", "实时游戏", "WebSocket", "JavaScript"],
+      "priority": 2
+    },
+    {
+      "id": "code-review",
+      "name": "代码审查",
+      "description": "代码审查技能，检查代码质量、最佳实践、潜在bug、性能问题等。",
+      "file": "skills/04-代码质量/代码审查.md",
+      "category": "代码质量",
+      "keywords": ["代码审查", "代码质量", "最佳实践", "bug", "重构"],
+      "priority": 2
+    },
+    {
+      "id": "unit-test-generation",
+      "name": "单元测试生成",
+      "description": "单元测试生成技能，为代码生成完整的单元测试用例和测试框架。",
+      "file": "skills/04-代码质量/单元测试生成.md",
+      "category": "代码质量",
+      "keywords": ["单元测试", "测试用例", "测试框架", "TDD"],
+      "priority": 2
+    },
+    {
+      "id": "api-doc-generator",
+      "name": "api-doc-generator",
+      "description": "API文档生成技能，根据代码或接口定义生成完整的API文档。",
+      "file": "skills/05-文档生成/api-doc-gennerator.md",
+      "category": "文档生成",
+      "keywords": ["API文档", "文档生成", "接口文档", "Swagger"],
+      "priority": 2
+    },
+    {
+      "id": "qa-test-doc-generator",
+      "name": "qa-test-doc-generator",
+      "description": "QA测试文档生成技能，生成完整的测试计划和测试用例文档。",
+      "file": "skills/05-文档生成/qa-test-doc-gennerator.md",
+      "category": "文档生成",
+      "keywords": ["QA", "测试文档", "测试计划", "测试用例"],
+      "priority": 2
+    },
+    {
+      "id": "backend-controller-review",
+      "name": "游戏后端总控审阅",
+      "description": "后端总控审阅技能，协调后端策划案评审和各种游戏类型插件。",
+      "file": "skills/06-总控/游戏后端总控审阅.md",
+      "category": "总控",
+      "keywords": ["后端", "总控", "审阅", "协调"],
+      "priority": 2
+    },
+    {
+      "id": "frontend-controller-review",
+      "name": "游戏前端总控审阅",
+      "description": "前端总控审阅技能，协调前端策划案评审和各种游戏类型插件。",
+      "file": "skills/06-总控/游戏前端总控审阅.md",
+      "category": "总控",
+      "keywords": ["前端", "总控", "审阅", "协调"],
+      "priority": 2
+    },
+    {
+      "id": "testing-strategy",
+      "name": "游戏测试策略",
+      "description": "游戏测试策略技能，提供自动化测试、性能测试、兼容性测试、A/B测试等测试策略。",
+      "file": "skills/07-测试策略/游戏测试策略.md",
+      "category": "测试策略",
+      "keywords": ["测试", "自动化", "性能测试", "兼容性", "A/B测试"],
+      "priority": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": "entry",
+      "name": "入口",
+      "description": "顶层入口技能，自动调用其他技能"
+    },
+    {
+      "id": "planning-review",
+      "name": "需求审阅",
+      "description": "前后端策划案评审技能"
+    },
+    {
+      "id": "design-review",
+      "name": "设计审查",
+      "description": "API、数据库、安全、网络等设计审查"
+    },
+    {
+      "id": "tech-stack",
+      "name": "技术栈适配",
+      "description": "各种编程语言和游戏引擎适配"
+    },
+    {
+      "id": "code-quality",
+      "name": "代码质量",
+      "description": "代码审查和单元测试生成"
+    },
+    {
+      "id": "documentation",
+      "name": "文档生成",
+      "description": "API文档和QA测试文档生成"
+    },
+    {
+      "id": "controller",
+      "name": "总控",
+      "description": "前后端总控审阅技能"
+    },
+    {
+      "id": "testing",
+      "name": "测试策略",
+      "description": "游戏测试策略"
+    }
+  ],
+  "features": [
+    "🛡️ Comprehensive error handling for all skills",
+    "📋 Standardized output formats with priority sorting (P0/P1/P2)",
+    "🎮 Complete coverage for Card/RPG, SLG, MMO, MOBA, FPS, Casual, and Chess games",
+    "⚙️ Support for Unity, Unreal Engine, Cocos Creator, and more",
+    "🔧 Multi-language support: Go, C++, Java, Python, Node.js, TypeScript",
+    "📊 Config table detection with intelligent analysis",
+    "🧪 Built-in validation and testing tools"
+  ],
+  "supportedGameTypes": [
+    "FPS",
+    "MMO",
+    "MOBA",
+    "SLG",
+    "Card RPG",
+    "Casual",
+    "Chess/Board Games"
+  ],
+  "supportedEngines": [
+    "Unity",
+    "Unreal Engine",
+    "Cocos Creator",
+    "Cocos2d-x",
+    "Custom Engines"
+  ],
+  "supportedLanguages": [
+    "Go",
+    "C++",
+    "Java",
+    "Python",
+    "Node.js",
+    "TypeScript",
+    "Lua"
+  ]
+}

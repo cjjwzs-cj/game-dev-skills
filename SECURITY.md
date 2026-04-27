@@ -11,7 +11,7 @@
 
 If you discover a security vulnerability, please do not open a public issue. Instead, send an email to the maintainer:
 
-**Contact:** jianjun.chen@example.com
+**Contact:** cjwzs8888@gmail.com
 
 Please include:
 - Description of the vulnerability

@@ -16,10 +16,15 @@ This guide provides comprehensive instructions on how to use the game-dev-skills
 
 ## Installation
 
-### NPM Installation
+### Using Installer (Recommended)
 
 ```bash
-npm install game-dev-skills
+# Install using npx (no installation required)
+npx game-dev-skills-installer
+
+# Or install globally
+npm install -g game-dev-skills-installer
+game-dev-skills-installer
 ```
 
 ### Manual Installation
@@ -29,17 +34,13 @@ npm install game-dev-skills
 git clone https://github.com/cjjwzs-cj/game-dev-skills.git
 cd game-dev-skills
 
-# Install dependencies
-npm install
-
-# Link for local testing
-npm link
-
-# Install to specific AI tool
-AI_TOOL=.claude npm run install
+# Copy skills manually
+cp -r skills/* ~/.claude/skills/
+# Or for Trae: cp -r skills/* ~/.trae/skills/
+# Or for Codex: cp -r skills/* ~/.codex/skills/
 ```
 
-After installation, skills are automatically copied to `.claude/skills/` (or `.trae/skills/`, `.codex/skills/`).
+After installation, skills are available in your AI tool's skills directory.
 
 ## Quick Start
 
