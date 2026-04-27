@@ -410,6 +410,34 @@ Found a bug? Have a feature request? Please [open an issue](https://github.com/c
 
 Thanks to all contributors who have helped make this project better!
 
+## ⚖️ Disclaimer
+
+### Development Context
+This project was developed during the author's personal time outside of regular employment hours. All development, testing, and documentation work was conducted independently without using any company resources, proprietary information, or confidential data.
+
+### Intellectual Property
+- All code, documentation, and content in this project is original work of the author
+- No company intellectual property, trade secrets, or confidential information was used
+- All development was conducted on personal equipment and personal time
+- The project is released under MIT License for free public use
+
+### No Conflict of Interest
+- This project does not compete with the author's employer
+- No company resources, code, or information was used
+- Development was conducted independently and separately from employment
+
+### Usage Disclaimer
+- This software is provided "as is", without warranty of any kind
+- The author is not responsible for any damages arising from use of this software
+- Users should review and test skills before using them in production
+- Token costs and AI tool usage are the responsibility of the user
+- This project is not affiliated with any AI tool provider
+
+### Professional Use
+- Users should ensure compliance with their company's policies before using this software
+- This project is suitable for personal and commercial use under MIT License
+- No restrictions on use, modification, or distribution under MIT License terms
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
